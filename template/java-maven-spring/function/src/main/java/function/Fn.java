@@ -11,16 +11,11 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class Fn extends SpringBootServletInitializer{
+public class Fn {
 
   public static void main(String[] args) {
-    SpringApplication.run(Handler.class, args);
+    SpringApplication.run(Fn.class, args);
   }
   
-  @Bean
-	Handler getHandler() {
-		return new Handler();
-	}
-
 
 }
